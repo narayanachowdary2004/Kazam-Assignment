@@ -24,7 +24,22 @@ This project is designed to conceptualize and implement a **Smart Water Heater**
 - **Code**: Contains the C implementation for controlling the relay system.
 
 ## Block Diagrams
-Diagrams for hardware, firmware, and software designs were created using the **online tool PlantUML**. These diagrams visually represent the system's architecture and functionality.
+The following block diagrams illustrate the system's design:
+
+1. **[Hardware Design](Block-Diagrams/hardware_design.puml)**
+   - Depicts the components and their interactions in the smart water heater.
+
+2. **[Firmware Design](Block-Diagrams/firmware_design.puml)**
+   - Describes the firmware architecture and data flow.
+
+3. **[Software Design](Block-Diagrams/software_design.puml)**
+   - Shows the integration between the mobile app, backend, and water heater.
+  
+## How to View the Diagrams
+To view the `.puml` files:
+1. Use a PlantUML-compatible editor like VS Code with the PlantUML extension.
+2. Paste the code into an online PlantUML editor [PlantUML Editor](https://plantuml.com/).
+
 
 ## How to Use
 1. Open the document to understand the design and implementation details.
