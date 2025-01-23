@@ -1,0 +1,16 @@
+@startuml
+skinparam rectangle {
+    BackgroundColor<<Frontend>> #FFDDDD
+    BackgroundColor<<Backend>> #DDFFDD
+    BackgroundColor<<Microcontroller>> #DDDDFF
+}
+
+rectangle "Mobile App\n(Frontend)" as App <<Frontend>>
+rectangle "Cloud Server\n(Backend)" as Cloud <<Backend>>
+rectangle "Microcontroller\n(Communication Protocols)" as MCU <<Microcontroller>>
+rectangle "Sensors, Actuators,\nSafety Mechanisms" as Components
+
+App --> Cloud
+Cloud --> MCU
+MCU --> Components
+@enduml
