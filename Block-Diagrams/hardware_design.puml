@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+skinparam rectangle {
+    BackgroundColor<<Sensor>> #FFDDDD
+    BackgroundColor<<Actuator>> #DDFFDD
+    BackgroundColor<<Communication>> #DDDDFF
+    BackgroundColor<<Power>> #FFFFDD
+}
+
+rectangle "Power Supply" as Power <<Power>>
+rectangle "Microcontroller" as MCU
+rectangle "Temperature Sensor" as TempSensor <<Sensor>>
+rectangle "Flow Sensor" as FlowSensor <<Sensor>>
+rectangle "Energy Meter" as EnergyMeter <<Sensor>>
+rectangle "Communication Module\n(Wi-Fi/Bluetooth)" as CommModule <<Communication>>
+rectangle "Heating Element" as Heater <<Actuator>>
+rectangle "Safety Valve" as SafetyValve <<Actuator>>
+rectangle "Remote App/\nControl System" as Remote
+
+Power --> MCU
+MCU --> TempSensor
+MCU --> FlowSensor
+MCU --> EnergyMeter
+MCU --> CommModule
+MCU --> Heater
+MCU --> SafetyValve
+CommModule --> Remote
+@enduml
