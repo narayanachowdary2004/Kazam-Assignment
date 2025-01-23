@@ -33,7 +33,7 @@ void calculate_relay_activation(int setpoint) {
 
 int main() {
     int setpoint;
-    printf("Enter load setpoint: ");
+    printf("Enter load setpoint (in watts): ");
     scanf("%d", &setpoint);
     calculate_relay_activation(setpoint);
     return 0;
