@@ -1,2 +1,1 @@
-# Kazam-Assignment
-This is a solution for Kazam Task
+# Kazam-Assignment - Smart Water Heater and Relay Control System
