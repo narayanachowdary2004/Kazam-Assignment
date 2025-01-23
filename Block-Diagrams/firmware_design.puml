@@ -1,0 +1,13 @@
+@startuml
+start
+:Sensor Data Acquisition;
+:Process Data (Embedded Algorithms);
+if (Safety Check Passed?) then (Yes)
+    :Temperature Regulation;
+else (No)
+    :Trigger Safety Mechanisms;
+endif
+:Control Actuators\n(Heating Element, Safety Valve);
+:Communicate with Remote System\n(Mobile App/Cloud);
+stop
+@enduml
